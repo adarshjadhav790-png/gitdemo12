@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Registration Form</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+.main {
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+padding: 20px;
+width: 300px;
+}
+}
+</style>
+</head>
+<body>
+<div class="main">
+<label for="first_name">First Name:</label>
+<input type="text" id="first_name" name="first_name" required>
+<label for="last_name">Last Name:</label>
+<input type="text" id="last_name" name="last_name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<label for="confirm_password">Confirm Password:</label>
+<input type="password" id="confirm_password" name="confirm_password" required>
+<label for="agree_terms">I agree to the <a href="/terms">terms of service</a>:</label>
+<input type="checkbox" name="agree_terms" id="agree_terms" required>
+<input type="submit" value="Register">
+</div>
+</body>
+</html>
